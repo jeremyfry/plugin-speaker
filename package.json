@@ -1,0 +1,27 @@
+{
+  "name": "plugin-speaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "express": "^4.16.1",
+    "node-aplay": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyfry/plugin-speaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremyfry/plugin-speaker/issues"
+  },
+  "homepage": "https://github.com/jeremyfry/plugin-speaker#readme"
+}
