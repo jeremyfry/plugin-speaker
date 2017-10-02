@@ -1,5 +1,5 @@
 import express from 'express';
-import Sound from 'node-aplay';
+import Sound from 'aplay';
 const app = express();
 const port = process.env.PORT || 80;
 
