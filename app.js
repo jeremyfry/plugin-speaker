@@ -5,7 +5,7 @@ const port = process.env.PORT || 80;
 
 
 app.get('/play/:sound', (req, res) => {
-	switch(req.sound){
+	switch(req.params.sound){
 		case 'alert':
 			playSound('alert.wav');
 			break;
