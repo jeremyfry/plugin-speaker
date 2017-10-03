@@ -1,5 +1,5 @@
 import express from 'express';
-import Sound from 'aplay';
+import * as child from 'child_process';
 const app = express();
 const port = process.env.PORT || 80;
 
@@ -16,7 +16,7 @@ app.get('/play/:sound', (req, res) => {
 });
 
 const playSound = (soundFile)=>{
-	new Sound('./sound-files/'+soundFile).play();
+	child.exec ('aplay ./sound-files/'+soundFile);
 };
 
 app.listen(port);
