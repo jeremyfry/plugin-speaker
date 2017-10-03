@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 app.get('/play/:sound', (req, res) => {
 	switch(req.params.sound){
 		case 'pantry':
-			playSound('pantryopen.mp3');
+			playSound('pantryopen.wav');
 			break;
 		default:
 			playSound('alert.wav');
